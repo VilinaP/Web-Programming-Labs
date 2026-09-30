@@ -1,0 +1,113 @@
+body{
+    font-family: Arial;
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#one{
+    border: 1px;
+    size: 10pt;
+    border-style: dashed;
+    border-color: aqua;
+    color:plum;
+    border-radius: 25px;
+    text-transform: uppercase;
+}
+#two{
+    border: 2px;
+    size: 12pt;
+    border-style: dotted;
+    border-color: black;
+    color:beige;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+#three{
+    border: 3px;
+    size: 14pt;
+    border-style: double;
+    border-color: blueviolet;
+    color:springgreen;
+    border-radius: 25px;
+}
+#four{
+    border: 4px;
+    size: 16pt;
+    border-style: groove;
+    border-color: purple;
+    color: lightblue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+#five{
+    border: 5px;
+    size: 18pt;
+    border-style: inset;
+    border-color: plum;
+    color: lightgrey;
+    border-radius: 25px;
+}
+#six{
+    border: 6px;
+    size: 20pt;
+    border-style: outset;
+    border-color: aquamarine;
+    color:lightpink;
+    text-decoration: underline;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+main{
+    height: 100vh;
+    display: flex;
+    flex:row;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 50px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+@media screen and (max-width:800px){
+    div{
+        background-color: green;
+    }
+}
+@media screen and (max-width:600px){
+    main{
+        flex-direction: column;
+    }
+    div{
+        font-weight: bold;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+}
+@media screen and (max-width:400px) {
+    main{
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    div{
+        width: 95vw;
+        align-items: center;
+    }
+    #one,#two,#three,#four,#five,#six{
+        border-top-style: dashed;
+        border-top-color: white;
+        border-bottom-style: dashed;
+        border-bottom-color: white;
+
+        border-left-color: black;
+        border-right-color: black;
+        border-left-style: dotted;
+        border-right-style: dotted;
+    }
+}

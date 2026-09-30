@@ -1,0 +1,136 @@
+/* CSS reset  */
+*{
+    box-sizing: border-box;
+}
+body, html{
+    padding: 0px;
+    margin: 0px;
+    font-family: Helvetica;
+}
+
+/* Main Stuff */
+nav{
+    position: fixed;
+    width: 100%;
+    background-color: #565555;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+}
+#navLink{
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+aside{
+    width: 100vw;
+    height: 50vh;
+    background-image: url(assets/skyscraper.svg);
+}
+#statistics{
+    background-color:#161616;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 50px;
+    padding-top: 10px;
+
+
+}
+#statistics p:first-child{
+    font-size: large;
+    padding: 15px;
+}
+#tempbox{
+    display: flex;
+    gap: 25px
+}
+.airquality{
+    background-color:#303030;;
+    border-radius: 25px;
+    width: 35vw;
+
+    padding: 20px;
+
+}
+
+#airquality p:first-child{
+    font-size: medium;
+}
+
+.text{
+    font-size: small;
+}
+
+#services img{
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+#services{
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+    color: white;
+    padding: 35px;
+}
+
+#newbox{
+    display: flex;
+    gap: 250px;
+
+}
+
+#ourservices{
+    font-size: large;
+}
+.subheading{
+    font-size: medium;
+}
+#servicetext{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    background-color: #565555;
+    color: white;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 800px){
+    #tempbox{
+        flex-direction: column;
+    }
+    .airquality{
+        width: 90vw;
+    }
+
+    #newbox{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #newbox img{
+        width: 50vw;
+    }
+}

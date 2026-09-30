@@ -1,0 +1,118 @@
+/* CSS reset */
+body, html{
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: #2D2D2D;
+}
+
+svg{
+    width: 100vw;
+    height: 100vh;
+}
+/* *************************************** */
+
+/* default display */
+
+.washington, .nevada, .wyoming, .newmexico, .kansas, .minnesota, .illinois, .arkansas, .ohio, .virginia, .alabama, .southcarolina, .virginia, .massachusents, .delaware{
+    fill: red;
+}
+
+.oregon, .utah, .southdakota, .missouri, .indiana, .mississippy, .florida, .northcarolina, .newyork, .maine, .rhodeisland, .alaska, .maryland{
+    fill: blue;
+}
+
+.montana, .arisona, .nebraska, .wisconsin, .oklahoma, .louisiana, .tennessee, .westvirginia, .newjersey, .newhamshire, .hawaii{
+    fill: orange;
+}
+
+.california, .idaho, .colorado, .texas, .northdakota, .iowa, .kentuky, .michigan, .georgia, .pennsylvania, .vermont, .connecticut{
+    fill: green;
+}
+
+svg .dc{
+    fill: green;
+}
+
+.state path:hover{
+    stroke: white;
+    stroke-width: 4;
+}
+svg .dc:hover{
+    stroke:white;
+    stroke-width: 4;
+}
+
+
+body{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+/* ************************************************************* */
+
+/* 2016 display */
+
+#year2016:hover ~ svg .washington, #year2016:hover ~ svg .hawaii, #year2016:hover ~ svg .california, #year2016:hover ~ svg .colorado, #year2016:hover ~ svg .connecticut,
+#year2016:hover ~ svg .delaware, #year2016:hover ~ svg .illinois, #year2016:hover ~ svg .maine, #year2016:hover ~ svg .maryland, #year2016:hover ~ svg .massachusents,
+#year2016:hover ~ svg .minnesota, #year2016:hover ~ svg .nevada, #year2016:hover ~ svg .newhamshire, #year2016:hover ~ svg .newjersey, #year2016:hover ~ svg .newmexico,
+#year2016:hover ~ svg .newyork, #year2016:hover ~ svg .rhodeisland, #year2016:hover ~ svg .vermont, #year2016:hover ~ svg .virginia, #year2016:hover ~ svg .washington,
+#year2016:hover ~ svg .dc{
+    fill: blue;
+}
+
+#year2016:hover ~ svg .idaho, #year2016:hover ~ svg .alaska, #year2016:hover ~ svg .northdakota, #year2016:hover ~ svg .utah, #year2016:hover ~ svg .arisona,
+#year2016:hover ~ svg .montana, #year2016:hover ~ svg .wyoming, #year2016:hover ~ svg .northcarolina, #year2016:hover ~ svg .southdakota, #year2016:hover ~ svg .nebraska,
+#year2016:hover ~ svg .kentuky, #year2016:hover ~ svg .oklahoma, #year2016:hover ~ svg .texas, #year2016:hover ~ svg .arkansas, #year2016:hover ~ svg .missouri, 
+#year2016:hover ~ svg .iowa, #year2016:hover ~ svg .wisconsin, #year2016:hover ~ svg .michigan, #year2016:hover ~ svg .ohio, #year2016:hover ~ svg .indiana, 
+#year2016:hover ~ svg .louisiana, #year2016:hover ~ svg .tennessee, #year2016:hover ~ svg .mississippy, #year2016:hover ~ svg .alabama, #year2016:hover ~ svg .florida,
+#year2016:hover ~ svg .georgia, #year2016:hover ~ svg .southcarolina, #year2016:hover ~ svg .northcarolina, #year2016:hover ~ svg .westvirginia,
+#year2016:hover ~ svg .pennsylvania{
+    fill: red;
+}
+
+/* ************************************************************* */
+
+/* 2020 display */
+
+#year2020:hover ~ svg .washington,#year2020:hover ~ svg .pennsylvania, #year2020:hover ~ svg .hawaii, #year2020:hover ~ svg .california, #year2020:hover ~ svg .colorado,
+#year2020:hover ~ svg .connecticut, #year2020:hover ~ svg .delaware, #year2020:hover ~ svg .illinois, #year2020:hover ~ svg .maine, #year2020:hover ~ svg .maryland, 
+#year2020:hover ~ svg .massachusents, #year2020:hover ~ svg .minnesota, #year2020:hover ~ svg .nevada, #year2020:hover ~ svg .newhamshire, #year2020:hover ~ svg .newjersey, 
+#year2020:hover ~ svg .newmexico, #year2020:hover ~ svg .newyork, #year2020:hover ~ svg .rhodeisland, #year2020:hover ~ svg .vermont, #year2020:hover ~ svg .virginia, 
+#year2020:hover ~ svg .dc, #year2020:hover ~ svg .georgia, #year2020:hover ~ svg .arisona, #year2020:hover ~ svg .wisconsin, #year2020:hover ~ svg .michigan{
+    fill: blue;
+}
+
+#year2020:hover ~ svg .idaho, #year2020:hover ~ svg .alaska, #year2020:hover ~ svg .northdakota, #year2020:hover ~ svg .utah,
+#year2020:hover ~ svg .montana, #year2020:hover ~ svg .wyoming, #year2020:hover ~ svg .northcarolina, #year2020:hover ~ svg .southdakota, #year2020:hover ~ svg .nebraska,
+#year2020:hover ~ svg .kentuky, #year2020:hover ~ svg .oklahoma, #year2020:hover ~ svg .texas, #year2020:hover ~ svg .arkansas, #year2020:hover ~ svg .missouri,
+#year2020:hover ~ svg .iowa, #year2020:hover ~ svg .ohio, #year2020:hover ~ svg .indiana,
+#year2020:hover ~ svg .louisiana, #year2020:hover ~ svg .tennessee, #year2020:hover ~ svg .mississippy, #year2020:hover ~ svg .alabama, #year2020:hover ~ svg .florida,
+#year2020:hover ~ svg .southcarolina, #year2020:hover ~ svg .northcarolina, #year2020:hover ~ svg .westvirginia{
+    fill: red;
+}
+
+/* ************************************************************* */
+
+/* 2024 display */
+
+#year2024:hover ~ svg .washington, #year2024:hover ~ svg .hawaii, #year2024:hover ~ svg .california, #year2024:hover ~ svg .colorado,
+#year2024:hover ~ svg .connecticut, #year2024:hover ~ svg .delaware, #year2024:hover ~ svg .illinois, #year2024:hover ~ svg .maine, #year2024:hover ~ svg .maryland, 
+#year2024:hover ~ svg .massachusents, #year2024:hover ~ svg .minnesota, #year2024:hover ~ svg .newhamshire, #year2024:hover ~ svg .newjersey, 
+#year2024:hover ~ svg .newmexico, #year2024:hover ~ svg .newyork, #year2024:hover ~ svg .rhodeisland, #year2024:hover ~ svg .vermont, #year2024:hover ~ svg .virginia, 
+#year2024:hover ~ svg .dc{
+    fill: blue;
+}
+
+#year2024:hover ~ svg .idaho, #year2024:hover ~ svg .alaska, #year2024:hover ~ svg .northdakota, #year2024:hover ~ svg .utah, #year2024:hover ~ svg .arisona, #year2024:hover ~ svg .nevada,
+#year2024:hover ~ svg .montana, #year2024:hover ~ svg .wyoming, #year2024:hover ~ svg .northcarolina, #year2024:hover ~ svg .southdakota, #year2024:hover ~ svg .nebraska,
+#year2024:hover ~ svg .kentuky, #year2024:hover ~ svg .oklahoma, #year2024:hover ~ svg .texas, #year2024:hover ~ svg .arkansas, #year2024:hover ~ svg .missouri,
+#year2024:hover ~ svg .iowa, #year2024:hover ~ svg .ohio, #year2024:hover ~ svg .indiana, #year2024:hover ~ svg .georgia, #year2024:hover ~ svg .wisconsin,
+#year2024:hover ~ svg .louisiana, #year2024:hover ~ svg .tennessee, #year2024:hover ~ svg .mississippy, #year2024:hover ~ svg .alabama, #year2024:hover ~ svg .florida,
+#year2024:hover ~ svg .southcarolina, #year2024:hover ~ svg .northcarolina, #year2024:hover ~ svg .westvirginia, #year2024:hover ~ svg .pennsylvania, #year2024:hover ~ svg .michigan{
+    fill: red;
+}
+/* ************************************************************* */

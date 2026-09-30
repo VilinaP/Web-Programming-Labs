@@ -1,0 +1,120 @@
+/* Reset and veriables */
+
+:root{
+    --redshadow: rgb(87,38,45);
+    --red: rgb(228,37,37);
+    --lightblue: rgb(173,173,248);
+    --darkblue: rgb(20,20,237);
+}
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+/* ************************************************************** */
+
+/* Animation for elements */
+
+@keyframes star{
+    100% {
+        clip-path: polygon(0 35%, 0 0, 50% 0%, 100% 0, 100% 35%, 100% 60%, 100% 100%, 50% 100%, 0 100%, 0 60%);
+    }    
+}
+
+@keyframes circlerotation{
+    100%{
+        transform: translate(calc(100vw - 100px), 0)  rotate(calc(360deg*4));
+    }
+}
+
+@keyframes boat{
+    25%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-25deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes moveboat{
+    0%{
+        left: 0;
+    }
+    100%{
+        left: calc(100vw - 300px);
+    }
+}
+
+@keyframes water{
+    100%{
+        background-position: right;
+    }
+}
+
+
+/* ***************************************************** */
+
+.inbox{
+    filter: drop-shadow(5px 5px 10px var(--redshadow));
+    
+}
+
+#box{
+    clip-path: polygon(0 35%, 40% 35%, 50% 0%, 60% 35%, 100% 35%, 70% 60%, 90% 100%, 50% 75%, 10% 100%, 30% 60%);
+    background-color: var(--red);
+    border-radius: 7px;
+    width: 100px;
+    height: 100px;
+    transition: 0.5s linear;
+    animation: star 3s linear infinite alternate;
+}
+
+#box:hover{
+    background-color: orange;
+}
+
+#circle{
+    clip-path: circle();
+    width: 100px;
+    height: 100px;
+    background: conic-gradient(at center, red 0 25%, green 0 180deg, yellow 0 75%, blue 0%);
+    
+    animation: circlerotation 4s linear infinite alternate;
+}
+
+.coolbox{
+    box-sizing: border-box;
+    overflow: hidden;
+    padding-top: 50px;
+    width: 100vw;
+    height: 200px;
+    background: linear-gradient(to right, var(--lightblue), var(--darkblue));
+    background-size: 200%;
+    background-position: left;
+    animation: water 4s linear infinite alternate;
+}
+
+#boat{
+    box-sizing: border-box; 
+    background-color: green;
+    height: 100px;
+    width: 300px;
+    border-radius: 50%;
+    padding-top: 15px;
+    padding-left: 48px;
+    position: relative;
+    animation: boat 1s linear infinite, moveboat 4s linear infinite alternate;
+}
+
+#shading{
+    background-color: var(--red);
+    height: 70px;
+    width: 200px;
+    border-radius: 50%;
+}

@@ -1,0 +1,187 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* -------------------------------------------------------------------------------------------- */
+
+:root{
+    --lightgreen: #edffd9;
+    --darkgreen: #96ff24;
+    --orange: #ffcc00;
+    --red: #ff0000;
+}
+
+@keyframes slideIn {
+    from{
+        transform: translate(-30px, 0);
+    }
+}
+
+header{
+    display: flex;
+    box-shadow: 1px 1px 10px #cdcdcd;
+    font-size: 10px;
+    align-items: center;
+    height: 70px;
+    gap: 5px;
+    padding: 20px;
+}
+
+header button{
+    box-shadow: 1px 1px 10px #cdcdcd;
+    background-color: var(--darkgreen);
+    border-radius: 45px;
+    color: white;
+    border: 0;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: auto;
+    width: 100px;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+    gap: 2%;
+}
+
+.card{
+    box-shadow: 1px 1px 10px #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    height: 20%;
+    width: 32%;
+    border-radius: 30px;
+    padding: 1.5%;
+    margin-bottom: 2%;
+    animation: slideIn 0.5s linear;
+}
+
+
+h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 2%;
+}
+
+.card p{
+    font-size: medium;
+}
+
+.card p ~ p{
+    margin-bottom: 5%;
+}
+
+.inStock{
+    background-color: var(--darkgreen);
+    color: white;
+    border-radius: 45px;
+    padding: 2%;
+}
+
+dialog{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--lightgreen);
+    width: 55vw;
+    height: 75vh;
+    border: none;
+    box-shadow: 1px 1px 10px #cdcdcd;
+    padding: 2%;
+    border-radius: 35px;
+}
+
+.dialogTop{
+    display: flex;
+    width: 50vw;
+    align-items: start;
+
+}
+
+.dialogTop button{
+    color: gray;
+    background-color: white;
+    border: none;
+    box-shadow: 1px 1px 10px #cdcdcd;
+    border-radius: 50px;
+    padding: 1%;
+    width: 15%;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.dialogTop h2{
+    font-weight: bold;
+    margin-left: 37%;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main input{
+    margin-bottom: 10px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 1%;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px #cdcdcd;
+}
+
+.main p{
+    font-weight: bold;
+}
+
+.main button{
+    padding: 2%;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 1px 1px 10px #cdcdcd;
+    color: white;
+    background-color: var(--darkgreen);
+}
+
+@media screen and (width <= 560px) {
+    .card p{
+        font-size: smaller;
+    }
+
+    .dialogTop h2{
+        font-size: smaller;
+        margin: 2%;
+    }
+
+    .inStock{
+        font-size: 7pt;
+    }
+    dialog{
+        padding: 15px;
+        height: fit-content;
+    }
+
+    .card{
+        width: 47%;
+        padding: 15px;
+    }
+
+    section{
+        gap: 20px;
+    }
+
+    .dialogTop button{
+        font-size: smaller;
+        height: 20px;
+        width: 50px;
+    }
+}

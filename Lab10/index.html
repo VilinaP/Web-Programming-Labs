@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js" defer></script>
+    <title>Glocery Tracker</title>
+</head>
+<body>
+    <header>
+        <img src="student_files/assets/leaf.svg" alt="leaf">
+        <h1>GroceryTracker</h1>
+        <button type="button">Add Item</button>
+    </header>
+    <main>
+        <section>
+            <template>
+                <div class="card">
+                    <h2>Banana</h2>
+                    <p>Quantity: <span class="Quantity">6</span></p>
+                    <p>Expires: <span class="date">2023-11-01</span></p>
+                    <p>Stock Level: <span class="inStock">In Stock</span></p>
+                </div>
+            </template>
+        </section>
+        <dialog>
+            <div>
+                <div class="dialogTop">
+                    <h2>Add New Grocery Item</h2>
+                    <button type="submit">Close</button>
+                </div>
+                <div class="main">
+                    <p>Item Name</p>
+                    <input type="text" name="ItemName" id="ItemName" placeholder="e.g., Apples">
+                    <p>Category</p>
+                    <input type="text" name="Category" id="Category" placeholder="e.g., Fruits">
+                    <p>Quantity</p>
+                    <input type="number" name="Quantity" id="Quantity" placeholder="138">
+                    <p>Expiration Date</p>
+                    <input type="text" name="ExpirationDate" id="ExpirationDate" placeholder="e.g., 2024-12-31">
+                    <button type="submit">Add to Inventory</button>
+                </div>
+            </div>
+        </dialog>
+    </main>
+</body>
+</html>

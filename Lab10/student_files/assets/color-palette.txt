@@ -1,0 +1,4 @@
+Light Green: #edffd9
+Dark Green: #96ff24
+Orange: #ffcc00
+Red: #ff0000
